@@ -4,6 +4,14 @@ Simulation 3D temps réel d'une étoile type Soleil : un **noyau** qui chauffe l
 masse, une **zone radiative** calme, une **zone convective** où le gaz chaud monte, se refroidit en
 surface et redescend. Tout est calculé sur la carte graphique (jusqu'à 1 million de parcelles).
 
+**▶ Démo en ligne : https://matteofrecon.github.io/sim-soleil/** (navigateur avec WebGL 2)
+
+| Extérieur | Coupe | Température |
+|---|---|---|
+| ![Extérieur](docs/img/exterior.jpg) | ![Coupe](docs/img/cut.jpg) | ![Température](docs/img/temperature.jpg) |
+| **Vitesse radiale** | **Traceurs** | **Suivi** |
+| ![Vitesse radiale](docs/img/velocity.jpg) | ![Traceurs](docs/img/tracers.jpg) | ![Suivi](docs/img/follow.jpg) |
+
 Le pourquoi et le comment (modèle physique, architecture, budget de performance) : voir
 [CADRAGE.md](CADRAGE.md).
 
@@ -16,6 +24,9 @@ npm run dev
 
 Puis ouvrir http://localhost:5199. Version autonome : `npm run build` → dossier `dist/`
 (à servir par un petit serveur web, par ex. `npm run preview`).
+
+Chaque push sur `main` reconstruit et publie automatiquement la démo sur GitHub Pages
+(`.github/workflows/deploy.yml`).
 
 ## Commandes
 
